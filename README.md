@@ -1,3 +1,3 @@
 # springbootselenium
 
-Dependency injection of WebDriver with Spring
+Dependency injection of WebDriver with Spring Boot
