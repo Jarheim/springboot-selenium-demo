@@ -5,7 +5,8 @@ import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties
-@Getter @Setter
-public class EnvironmentProperties {
-    private String url;
+@Getter
+@Setter
+public class WebDriverProperties {
+    private String driver;
 }

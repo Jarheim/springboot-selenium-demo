@@ -14,7 +14,7 @@ class GoogleTest extends TestBase {
 
     @Test
     void visitGoogle() {
-        driver.get(environmentProperties.getUrlUnderTest());
+        driver.get(environmentProperties.getUrl());
 
         littlePageObject.justTesting();
     }

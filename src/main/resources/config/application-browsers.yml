@@ -1,0 +1,11 @@
+spring:
+  profiles: chrome
+driver: chrome
+driverPath: src/main/resources/chromedriver.exe
+
+---
+
+spring:
+  profiles: firefox
+driver: firefox
+driverPath: src/main/resources/firefoxdriver.exe
