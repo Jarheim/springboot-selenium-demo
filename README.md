@@ -1,3 +1,3 @@
 # springboot-selenium
 
-Test automation with selenium using Spring Boot (Dependency injection, ConfigProperties). JUnit 5, Parallel execution via Maven Surefire  
+Test automation using Spring Boot (Dependency injection, ConfigProperties). JUnit 5, Parallel execution via Maven Surefire  
