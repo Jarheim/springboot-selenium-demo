@@ -1,15 +1,14 @@
 package com.setpace.frontend;
 
+import com.setpace.frontend.config.EnvironmentProperties;
+import com.setpace.frontend.pageobjects.GoogleSearchPage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.setpace.frontend.config.EnvironmentProperties;
-import com.setpace.frontend.pageobjects.GoogleSearchPage;
 
 @Execution(ExecutionMode.CONCURRENT)
-class GoogleTest extends TestBase {
-
+public class Google3Test extends TestBase {
     @Autowired
     private GoogleSearchPage littlePageObject;
 
@@ -20,9 +19,9 @@ class GoogleTest extends TestBase {
     void visitGoogle() throws Exception {
         driver.get(environmentProperties.getUrl());
 
-        littlePageObject.justTesting("https://www.setpace.se/");
+        littlePageObject.justTesting("https://www.nordea.se/");
 
-        if(!driver.getCurrentUrl().equalsIgnoreCase("https://www.setpace.se/")) {
+        if(!driver.getCurrentUrl().equalsIgnoreCase("https://www.nordea.se/")) {
             System.out.println("hej hej");
             throw new Exception("faaail");
         }
@@ -32,9 +31,9 @@ class GoogleTest extends TestBase {
     void visitGoogleAgain() throws Exception {
         driver.get(environmentProperties.getUrl());
 
-        littlePageObject.justTesting("https://www.google.se/");
+        littlePageObject.justTesting("https://www.nordnet.se/start.html");
 
-        if(!driver.getCurrentUrl().equalsIgnoreCase("https://www.google.se/")) {
+        if(!driver.getCurrentUrl().equalsIgnoreCase("https://www.nordnet.se/start.html")) {
             System.out.println("hej hej");
             throw new Exception("faaail");
         }
