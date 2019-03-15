@@ -1,3 +1,3 @@
 # springboot-selenium
 
-Dependency injection of WebDriver with Spring Boot
+Test automation with selenium using Spring Boot (Dependency injection, ConfigProperties). JUnit 5, Parallel execution via Maven Surefire  
