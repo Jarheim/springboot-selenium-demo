@@ -1,4 +1,4 @@
-package com.hm.frontend.driver;
+package com.hm.driver;
 
 import org.apache.commons.lang3.NotImplementedException;
 import org.openqa.selenium.WebDriver;

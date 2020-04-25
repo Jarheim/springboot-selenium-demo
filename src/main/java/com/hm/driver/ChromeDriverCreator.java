@@ -1,4 +1,4 @@
-package com.hm.frontend.driver;
+package com.hm.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

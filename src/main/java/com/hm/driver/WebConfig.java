@@ -1,4 +1,4 @@
-package com.hm.frontend.driver;
+package com.hm.driver;
 
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Value;

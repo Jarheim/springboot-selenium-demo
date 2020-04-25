@@ -1,6 +1,6 @@
-package com.hm.frontend;
+package com.hm;
 
-import com.hm.frontend.driver.WebConfig;
+import com.hm.driver.WebConfig;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;

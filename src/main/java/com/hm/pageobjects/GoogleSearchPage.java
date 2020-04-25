@@ -1,4 +1,4 @@
-package com.hm.frontend.pageobjects;
+package com.hm.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

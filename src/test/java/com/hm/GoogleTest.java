@@ -1,6 +1,6 @@
-package com.hm.frontend;
+package com.hm;
 
-import com.hm.frontend.pageobjects.GoogleSearchPage;
+import com.hm.pageobjects.GoogleSearchPage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -13,9 +13,9 @@ public class GoogleTest extends TestBase {
     private GoogleSearchPage googleSearchPage;
 
     @Test
-    void visitGoogle() {
+    void searchOnGoogle() {
         googleSearchPage
-                .typeSearchString("Covid 19")
+                .typeSearchString("Hm home buy pillows")
                 .clickSearchButton();
 
         //TODO - Perform validation
