@@ -1,9 +1,0 @@
-spring:
-  profiles: test
-url: https://www.google.se/
-
----
-
-spring:
-  profiles: prod
-url: https://www.google.com/

@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: test
+driver: chrome
+---
+
+spring:
+  profiles: test
+base_url: http://www.google.se/
+
+---
+
+spring:
+  profiles: staging
+base_url: http://www.google.com/
+
+---

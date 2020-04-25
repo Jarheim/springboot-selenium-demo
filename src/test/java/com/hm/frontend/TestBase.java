@@ -1,7 +1,8 @@
-package com.setpace.frontend;
+package com.hm.frontend;
 
-import com.setpace.frontend.driver.WebContext;
+import com.hm.frontend.driver.WebConfig;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +12,12 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @SpringBootTest
 @ExtendWith({SpringExtension.class})
-@ContextConfiguration(classes = WebContext.class)
+@ContextConfiguration(classes = WebConfig.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class TestBase {
 
     @Autowired
-    WebDriver driver;
+    private WebDriver driver;
 
     @AfterEach
     public void cleanUpTest() {
